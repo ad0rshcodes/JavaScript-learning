@@ -2,7 +2,7 @@
 
 //Example:
 
-var myName = "adarsh";
+let myName = "adarsh";
 
 console.log(`line 7 ${myName}`);
 
@@ -13,11 +13,11 @@ function scope1() {
   function scope2() {
     //If myName is not declared in this function then it can ask for myName from the function above but not vice versa
     console.log(`line 14 ${myName}`);
-    // myName = "Rajesh";
+    myName = "Nobita";
     console.log(`line 16 ${myName}`);
   }
   scope2();
 }
 
-// scope1();
+scope1();
 console.log(myName);
