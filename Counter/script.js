@@ -1,3 +1,5 @@
+// console.log(document.getElementsByClassName("counter"));
+
 counter = () => {
   let current = parseInt(
     document.getElementsByClassName("counter")[0].innerHTML
