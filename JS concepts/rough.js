@@ -1,9 +1,9 @@
-let naming = (name1, name2, num1, num2) => {
-  console.log(`${name1} ${name2}`);
-
-  return parseInt(num1) + parseInt(num2);
+let Adarsh = {
+  name: "Adarsh",
+  lastName: "Sharma",
+  getName: function () {
+    return console.log(`${this.name} ${this.lastName}`);
+  },
 };
 
-returnType = naming("Adarsh", "Daksh", "54", "67");
-
-console.log(returnType);
+console.log(Adarsh.getName());
