@@ -29,7 +29,7 @@ body {
 .center {
   min-width: 400px;
   height: 400px;
-  background: rgb(199, 22, 22);
+  background: rgb(66, 66, 66);
   border-radius: 100%;
   transition: 0.2s ease-in-out all;
 }

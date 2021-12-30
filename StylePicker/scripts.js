@@ -1,28 +1,29 @@
-// let red = document.getElementsByClassName("red");
-// console.log(red[0].style);
+let red = document.querySelector(".red");
+let cyan = document.querySelector(".cyan");
+let violet = document.querySelector(".violet");
+let orange = document.querySelector(".orange");
+let pink = document.querySelector(".pink");
+let center = document.querySelector(".center");
 
-// console.log(red[0].style.backgroundColor);
+function changeColor(toColor) {
+  center.style.backgroundColor = window
+    .getComputedStyle(toColor)
+    .getPropertyValue("background-color");
+}
+let transitionColor = () => {
+  center.style.backgroundColor = "rgb(66, 66, 66)";
+};
 
-let red = document.querySelector(".red").style.backgroundColor;
-console.log(red);
+// red.addEventListener("mouseover", changeColor(red));
+//This method will change the color to red even before firing the event. That is because JS is a interpreted language so we don't call the funtion directly because doing so will lead to its execution. We use callbacks in such cases.
+red.addEventListener("mouseover", () => changeColor(red));
+cyan.addEventListener("mouseover", () => changeColor(cyan));
+violet.addEventListener("mouseover", () => changeColor(violet));
+orange.addEventListener("mouseover", () => changeColor(orange));
+pink.addEventListener("mouseover", () => changeColor(pink));
 
-// let cyan = document.querySelector(".cyan");
-// let violet = document.querySelector(".violet");
-// let orange = document.querySelector(".orange");
-// let pink = document.querySelector(".pink");
-
-// console.log(cyan.style);
-// console.log(window.getComputedStyle(red).backgroundColor);
-
-// const getBGColor = (selectedElement) => {
-//   return window.getComputedStyle(selectedElement).backgroundColor;
-// };
-
-// console.log(getBGColor(violet));
-// document.querySelector(".center").style.backgroundColor = "green";
-// let center = document.querySelector(".center").style.backgroundColor;
-// console.log(center);
-
-// red.addEventListener("mouse", () => {
-//   center = red.style.backgroundColor;
-// });
+red.addEventListener("mouseout", () => transitionColor());
+cyan.addEventListener("mouseout", () => transitionColor());
+violet.addEventListener("mouseout", () => transitionColor());
+orange.addEventListener("mouseout", () => transitionColor());
+pink.addEventListener("mouseout", () => transitionColor());
