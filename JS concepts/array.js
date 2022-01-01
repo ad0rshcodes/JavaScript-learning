@@ -42,4 +42,17 @@ console.log(numbers);
 numbers.fill("abcd", 2, 4); //start with index 2 to the index 4 (not included).
 console.log(numbers);
 
-//generally the starting index is inclusive while the ending index is exclusive.
+//*generally the starting index is inclusive while the ending index is exclusive.
+
+//filter method
+// The filter() method does not change the original array.
+
+const users = [
+  { name: "Adarsh", age: 16 },
+  { name: "John", age: 32 },
+  { name: "Sally", age: 45 },
+];
+
+let modifiedUser = users.filter((user) => user.age >= 18);
+// The filter() method creates a new array filled with elements that pass a test provided by a function.
+console.log(modifiedUser);

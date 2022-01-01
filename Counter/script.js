@@ -1,6 +1,6 @@
 // console.log(document.getElementsByClassName("counter"));
 
-counter = () => {
+let counter = () => {
   let current = parseInt(
     document.getElementsByClassName("counter")[0].innerHTML
   );
@@ -13,4 +13,6 @@ counter = () => {
   document.getElementsByClassName("counter")[0].innerHTML = current;
 };
 
-setInterval(counter, 25);
+// setTimeout(counter, 10000); To delay the counter by 10 sec.
+
+setInterval(counter, 25); //runs the function in every 25 milli secs.
