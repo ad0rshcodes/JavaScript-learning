@@ -5,7 +5,7 @@ const numbers = [0, 1, 2, 3, 4, 5];
 const numbers2 = new Array(10, 20, 30, 40);
 
 //to find the index
-index = numbers.indexOf(0);
+let index = numbers.indexOf(0);
 console.log(index);
 //If we look for a element which is not available in the array then the indexof function returns "-1" which can be used in "If-else" statements.
 
