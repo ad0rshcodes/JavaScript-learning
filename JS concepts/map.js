@@ -7,5 +7,5 @@ const users = [
 let modifiedUser = users.map((user) => user);
 console.log(modifiedUser); //This jsut copied the whole array
 
-modifiedUser = users.map((member) => member.name);
+modifiedUser = users.map((x) => x.name);
 console.log(modifiedUser);
