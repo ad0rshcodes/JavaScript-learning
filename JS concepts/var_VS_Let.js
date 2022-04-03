@@ -23,3 +23,8 @@ console.log(name); // !Gives an error of not defined because "var" is scoped ins
 console.log(name2); // !Gives an error of not defined.
 
 // * "let" keyword is scoped inside all the blocks that are possible(for loop block, function block, etc). [A block means an area enclosed inside '{}']
+
+//* Being scoped under 'x' means that particular variables are restricted under 'x'.
+//* Ex: 'let' is block scoped means that everything is restricted to {}.
+//* Ex: 'var' is globally and functionally scoped means that var is restricted to functions.
+//! var variables can be accessed from outside while declared in for, if statements.
